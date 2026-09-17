@@ -1,0 +1,83 @@
+/* ---------- Maths practice page ---------- */
+.maths-panel{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 30px 0 60px;
+}
+
+.op-picker{
+  display:flex; gap:12px; flex-wrap:wrap;
+}
+.op-btn{
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--white);
+  font-family: var(--font-display);
+  font-weight: 700;
+  box-shadow: var(--shadow-pop);
+  font-size: 1.1rem;
+}
+.op-btn.active{ background: var(--sky); color: var(--white); }
+
+.level-picker{
+  display:flex; gap:10px; flex-wrap:wrap;
+}
+.level-btn{
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #EFEAE0;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.level-btn.active{ background: var(--yellow); }
+
+.problem-box{
+  text-align:center;
+  padding: 50px 20px;
+}
+.problem-box .sum{
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 7vw, 4rem);
+  color: var(--navy);
+  margin-bottom: 26px;
+}
+.answer-row{
+  display:flex; justify-content:center; gap:14px; flex-wrap:wrap;
+}
+.answer-input{
+  width: 140px;
+  font-size: 1.6rem;
+  text-align:center;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 3px solid #E4DDCC;
+  font-family: var(--font-display);
+  background: var(--cream);
+}
+.answer-input:focus{ border-color: var(--sky); outline:none; }
+
+.feedback{
+  min-height: 34px;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  margin-top: 18px;
+}
+.feedback.correct{ color: #2E9E4C; }
+.feedback.wrong{ color: var(--coral); }
+
+.maths-stats{
+  display:flex; justify-content:center; gap: 32px;
+  font-weight:700;
+  flex-wrap:wrap;
+}
+.maths-stats .stat-value{
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  display:block;
+  color: var(--navy);
+}
+.maths-stats .stat-label{
+  font-size: 0.85rem;
+  color: #7482a0;
+}

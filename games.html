@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Games — Kids Learning Hub</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/games.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div class="blob-bg"><span></span><span></span><span></span></div>
+
+<div class="page">
+  <header class="site-header">
+    <div class="wrap nav-bar">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Kids Learning Hub logo">
+        Kids Learning Hub
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="maths.html">Maths Practice</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="progress.html">Progress</a></li>
+      </ul>
+      <button class="sound-toggle" data-sound-toggle aria-label="Toggle sound">🔊</button>
+    </div>
+  </header>
+
+  <main class="wrap games-panel">
+    <h1>Mini Games</h1>
+
+    <div class="game-picker">
+      <button class="game-pick-card active" data-game-pick="memory">
+        <h3>🃏 Memory Match</h3>
+        <p>Same number wale do cards dhoondo aur unhe match karo.</p>
+      </button>
+      <button class="game-pick-card" data-game-pick="balloon">
+        <h3>🎈 Balloon Count</h3>
+        <p>Bataye gaye target tak sahi ginti mein balloons pop karo.</p>
+      </button>
+      <button class="game-pick-card" data-game-pick="shapes">
+        <h3>🔺 Shape Sort</h3>
+        <p>Sahi rang aur shape wale box par jaldi se click karo.</p>
+      </button>
+    </div>
+
+    <div class="card game-stage" data-game-stage></div>
+  </main>
+
+  <footer class="site-footer">
+    Made with ❤️ for little learners.
+  </footer>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/main.js"></script>
+<script src="js/games.js"></script>
+</body>
+</html>

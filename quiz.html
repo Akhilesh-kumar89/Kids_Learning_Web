@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz — Kids Learning Hub</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/quiz.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div class="blob-bg"><span></span><span></span><span></span></div>
+
+<div class="page">
+  <header class="site-header">
+    <div class="wrap nav-bar">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Kids Learning Hub logo">
+        Kids Learning Hub
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="maths.html">Maths Practice</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="progress.html">Progress</a></li>
+      </ul>
+      <button class="sound-toggle" data-sound-toggle aria-label="Toggle sound">🔊</button>
+    </div>
+  </header>
+
+  <main class="wrap quiz-panel">
+    <h1>Quiz Time</h1>
+
+    <div class="card" data-subject-screen>
+      <p style="font-weight:700;margin-bottom:16px;">Subject choose karo:</p>
+      <div class="row">
+        <button class="btn" data-subject="maths">🧮 Maths</button>
+        <button class="btn secondary" data-subject="gk">🌎 General Knowledge</button>
+        <button class="btn grass" data-subject="science">🔬 Science</button>
+        <button class="btn yellow" data-subject="english">🔤 English</button>
+      </div>
+    </div>
+
+    <div class="card" data-quiz-screen hidden>
+      <div class="quiz-progress">
+        <div class="quiz-progress-track">
+          <div class="quiz-progress-fill" data-progress-fill></div>
+        </div>
+        <span class="quiz-progress-label" data-progress-label>Sawaal 1 / 8</span>
+      </div>
+
+      <div class="quiz-timer">
+        <div class="quiz-timer-track">
+          <div class="quiz-timer-fill" data-timer-fill></div>
+        </div>
+        <span class="quiz-timer-label" data-timer-label>15s</span>
+      </div>
+
+      <div class="quiz-question" data-question></div>
+      <div class="quiz-options" data-options></div>
+
+      <div class="quiz-footer">
+        <span></span>
+        <button class="btn grass" data-quiz-next hidden>Agla sawaal</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    Made with ❤️ for little learners.
+  </footer>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/main.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maths Practice — Kids Learning Hub</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/maths.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div class="blob-bg"><span></span><span></span><span></span></div>
+
+<div class="page">
+  <header class="site-header">
+    <div class="wrap nav-bar">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Kids Learning Hub logo">
+        Kids Learning Hub
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="maths.html">Maths Practice</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="progress.html">Progress</a></li>
+      </ul>
+      <button class="sound-toggle" data-sound-toggle aria-label="Toggle sound">🔊</button>
+    </div>
+  </header>
+
+  <main class="wrap maths-panel">
+    <h1>Maths Practice</h1>
+
+    <div class="stack">
+      <div>
+        <p style="font-weight:700;margin-bottom:8px;">Operation choose karo:</p>
+        <div class="op-picker">
+          <button class="op-btn active" data-op="add">➕ Jodna</button>
+          <button class="op-btn" data-op="sub">➖ Ghatana</button>
+          <button class="op-btn" data-op="mul">✖️ Guna</button>
+          <button class="op-btn" data-op="div">➗ Bhaag</button>
+        </div>
+      </div>
+
+      <div>
+        <p style="font-weight:700;margin-bottom:8px;">Level choose karo:</p>
+        <div class="level-picker">
+          <button class="level-btn active" data-level="1">Easy</button>
+          <button class="level-btn" data-level="2">Medium</button>
+          <button class="level-btn" data-level="3">Hard</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card problem-box mt-2">
+      <div class="sum" data-sum>...</div>
+      <div class="answer-row">
+        <input type="number" class="answer-input" data-answer-input placeholder="?" inputmode="numeric">
+      </div>
+      <div class="feedback" data-feedback></div>
+      <div class="row" style="justify-content:center;margin-top:14px;">
+        <button class="btn" data-check-btn>Check karo</button>
+        <button class="btn grass" data-next-btn hidden>Agla sawaal</button>
+      </div>
+    </div>
+
+    <div class="maths-stats mt-2">
+      <div>
+        <span class="stat-value" data-score>0 / 0</span>
+        <span class="stat-label">Sahi jawaab</span>
+      </div>
+      <div>
+        <span class="stat-value" data-streak>0</span>
+        <span class="stat-label">Current streak</span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    Made with ❤️ for little learners.
+  </footer>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/main.js"></script>
+<script src="js/maths.js"></script>
+</body>
+</html>
